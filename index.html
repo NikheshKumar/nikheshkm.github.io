@@ -3,39 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikhesh Kumar Murali's Portfolio</title>
+    <title>Nikhesh Kumar M's Personal Webpage</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .navbar { display: flex; justify-content: center; background-color: #333; }
-        .navbar a { color: white; padding: 14px 20px; text-decoration: none; text-align: center; }
-        .navbar a:hover { background-color: #ddd; color: black; }
-        section { padding: 20px; }
-        .section-header { text-align: center; margin-bottom: 40px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77A6F7 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main-header {
+            text-align: center;
+            background: #77A6F7;
+            color: #fff;
+            padding: 50px 0;
+        }
+        .main-header h1 {
+            margin: 0;
+            font-size: 55px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background: #fff;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Nikhesh Kumar M's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Awards</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="navbar">
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-</div>
+    <div class="main-header">
+        <h1>Nikhesh Kumar M's Personal Webpage</h1>
+        <p>Machine Learning Engineer and Data Scientist</p>
+    </div>
 
-<section id="education">
-    <h2 class="section-header">Education</h2>
-    <p>My educational background.</p>
-</section>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a current Master's student at IIT Madras and the University of Birmingham, pursuing a degree in Data Science and AI. With a strong background in mathematics and practical experience in machine learning, I am passionate about leveraging data to drive insights and innovation.</p>
+    </section>
 
-<section id="projects">
-    <h2 class="section-header">Projects</h2>
-    <p>Euclidean Geometry in Lean <a href="https://github.com/NikheshKumar/Nikhesh_PnP2023">https://github.com/NikheshKumar/Nikhesh_PnP2023</a></p>
-     </p>
-</section>
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <p><strong>Joint Master’s in Data Science and AI</strong><br>IIT Madras & University of Birmingham, Aug 2023 – Present</p>
+        <p><strong>Master of Science (Research)</strong><br>Indian Institute of Science, Aug 2022 – Jul 2023, CGPA: 6.7</p>
+        <p><strong>Bachelor of Science (Research)</strong><br>Indian Institute of Science, Aug 2018 – Jul 2022, CGPA: 6.6</p>
+        <p><strong>Higher Secondary School</strong><br>Nehru Smaraka Vidya Kendra, Aug 2016 – May 2018, CGPA: 9.44</p>
+        <p><strong>Secondary School</strong><br>Kendriya Vidyalaya No.1, Jul 2015 – May 2016, CGPA 10</p>
+    </section>
 
-<section id="resume">
-    <h2 class="section-header">Resume</h2>
-    <p>Link to my resume.</p>
-</section>
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <p><strong>Master’s Research Work</strong><br>Deep learning for Eye Gaze Detection, Birmingham, UK, Mar 2024 – Present</p>
+        <ul>
+            <li>Advisor: Prof. Sang-Hoon Yeo</li>
+            <li>Performed object detection and semantic segmentation using YOLO</li>
+            <li>Worked on Area Of Interest Analysis on eye gaze and Human Visual Attention</li>
+        </ul>
+        <p><strong>Master’s Research Work</strong><br>Responsible AI and LLMs, Chennai, India, Dec 2023 – Jan 2024</p>
+        <ul>
+            <li>Advisor: Prof. Balaraman Ravindran</li>
+            <li>Collaborated in a team of 7 to analyze AI’s societal impacts</li>
+            <li>Conducted comprehensive data collection and analysis on recent LLM and RAI research</li>
+            <li>Reported on evaluating the fairness of LLMs within the healthcare sector</li>
+        </ul>
+    </section>
 
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Geometry of Fuchsian groups</strong><br>Investigated discrete groups and properly discontinuous actions. Advisor: Prof. Subhojoy Gupta, IISc Bengaluru</li>
+            <li><strong>Gromov-Hausdorff Convergence Theorem in Metric Geometry</strong><br>Studied Lipschitz functions and isometries between spaces. Advisor: Prof. Siddhartha Gadgil, IISc Bengaluru</li>
+            <li><strong>Optimization in Matlab & Python</strong><br>Implemented Genetic Algorithm in Matlab. Utilized Stochastic Gradient Descent for optimization in Python. Applied SciPy library tools to solve constrained optimization problems.</li>
+            <li><strong>Dynamical Systems with Python</strong><br>Studied population dynamics using various linear and non-linear models. Conducted stability analysis of the studied dynamical systems.</li>
+            <li><strong>Explainable and Interpretable ML in Python</strong><br>Explored Explainable ML for complex models and real-world applications. Examined trade-offs between accuracy and interpretability.</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li>Computer Languages: Python, C/C++, Matlab, Lean, LATEX</li>
+            <li>Libraries: pandas, NumPy, SciPy, Matplotlib, Keras, PyTorch, TensorFlow, scikit-learn, pydantic, OpenCV, PyCaret, PySyft, TroveKleaner</li>
+            <li>APIs: BigML, Fast-ai Mid-level, Geneea, TensorFlow, Cohere Chat</li>
+            <li>Developer Tools: GitHub, VS Code, PyCharm</li>
+            <li>Human Languages: English, Tamil, Hindi</li>
+        </ul>
+    </section>
+
+    <section id="achievements" class="container">
+        <h2>Awards & Achievements</h2>
+        <ul>
+            <li><strong>KVPY Fellowship</strong> 2018-2023, Bengaluru, India</li>
+            <li><strong>NTSE Scholarship</strong> 2015-2016, Trichy, India</li>
+        </ul>
+    </section>
+
+    <section id="certifications" class="container">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Coursera: NLP, Generative AI Course</li>
+            <li>DeepLearning.ai: LLMs, ChatGPT Prompt Engineering for Developers</li>
+            <li>Microsoft: Azure AI-900 fundamentals</li>
+            <li>Supercomputing: High Performance Computing with Supercomputer - BEAR</li>
+            <li>Kaggle: Introduction to Data Science</li>
+            <li>LinkedIn: Communication and Personal Development Courses</li>
+        </ul>
+    </section>
+
+    <section id="activities" class="container">
+        <h2>Co-Curricular Activities</h2>
+        <ul>
+            <li>Member of Quizzing club, IIT Madras</li>
+            <li>Member of Football club, University of Birmingham</li>
+            <li>Member of SIAM-IISc chapter and UG Math club</li>
+            <li>Event coordinator for quizzing events as part of Rhapsody fest and Pravega IISc UG festival</li>
+            <li>Volunteer for Science & Mathematics outreach as part of Pravega UG fest and IISc Open Day</li>
+            <li>Member of IISc Photography club and Short film making</li>
+            <li>Gold medals in IISc Eclipse UG Sports festival in Table Tennis, Football, Cricket, and Handball</li>
+            <li>Volunteered with the "NoteBook Drive" NGO, dedicated to educating school children from underprivileged and marginalized communities</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:nikheshk19@gmail.com">nikheshk19@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/m-nikhesh-kumar-45317483/">My LinkedIn Profile</a></p>
+        <p>Leetcode: <a href="https://leetcode.com/nikheshk19">My Leetcode Profile</a></p>
+        <p>GitHub: <a href="https://github.com/NikheshKumar">My GitHub Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nikhesh Kumar M's Personal Webpage</p>
+    </footer>
 </body>
 </html>
